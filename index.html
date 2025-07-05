@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaintJS</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      margin-top: 20px;
+    }
+    canvas {
+      border: 1px solid #2c2c2c;
+      cursor: crosshair;
+    }
+    .controls {
+      margin-bottom: 10px;
+    }
+    .controls button,
+    .controls input[type="color"] {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <input type="color" id="colorPicker" value="#2c2c2c" />
+    <input type="range" id="lineWidth" min="1" max="10" value="2" />
+    <button id="mode">Fill</button>
+    <button id="save">Save</button>
+  </div>
+  <canvas id="jsCanvas" width="700" height="500"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
